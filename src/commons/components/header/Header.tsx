@@ -42,7 +42,11 @@ const Header = () => {
             value={value}
             onChange={(e, value) => setValue(value)}
             textColor="inherit"
-            indicatorColor="secondary"
+            TabIndicatorProps={{
+              sx: {
+                backgroundColor: "white",
+              },
+            }}
             sx={{ ml: "auto" }}
           >
             {PAGES.map((page, index) => (

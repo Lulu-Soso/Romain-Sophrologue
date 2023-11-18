@@ -1,7 +1,8 @@
+import { Typography } from "@mui/material";
 import React from "react";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return <Typography>Contact</Typography>;
 };
 
 export default Contact;

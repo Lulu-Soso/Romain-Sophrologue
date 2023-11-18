@@ -1,7 +1,8 @@
+import { Typography } from "@mui/material";
 import React from "react";
 
 const Example = () => {
-  return <div>Example</div>;
+  return <Typography>Example</Typography>;
 };
 
 export default Example;
