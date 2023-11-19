@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./commons/components/header/Header";
-import { Routes, Route } from "react-router-dom";
-import Home from "./views/home/Home";
-import AboutUs from "./views/about/AboutUs";
-import Contact from "./views/contact/Contact";
+import { Outlet } from "react-router-dom";
 import { Container } from "@mui/material";
 
 function App() {
@@ -24,12 +21,7 @@ function App() {
       <Header />
 
       <Container sx={{ mt: `${appBarHeight + muiPadding}px ` }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Outlet />
       </Container>
     </div>
   );
