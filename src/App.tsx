@@ -5,11 +5,11 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./views/home/Home";
 import AboutUs from "./views/about/AboutUs";
 import Contact from "./views/contact/Contact";
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
+import Services from "./views/service/Services";
 
 function App() {
   const [appBarHeight, setAppBarHeight] = useState(0);
-  const muiPadding = 16;
 
   useEffect(() => {
     const appBar = document.querySelector(".MuiAppBar-root");
@@ -23,14 +23,15 @@ function App() {
     <div>
       <Header />
 
-      <Container sx={{ mt: `${appBarHeight + muiPadding}px ` }}>
+      <Box sx={{ mt: `${appBarHeight}px ` }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </Container>
+      </Box>
     </div>
   );
 }
