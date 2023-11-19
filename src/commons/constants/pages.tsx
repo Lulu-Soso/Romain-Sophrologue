@@ -1,15 +1,25 @@
-import { RecentActors, Roofing, Spa } from "@mui/icons-material";
+import {
+  RecentActors,
+  Roofing,
+  Handshake,
+  PersonPin,
+} from "@mui/icons-material";
 
 export const PAGES = [
   {
     link: "/home",
-    title: "Home",
+    title: "Accueil",
     logo: <Roofing color="inherit" />,
   },
   {
+    link: "/services",
+    title: "Prestations",
+    logo: <Handshake color="inherit" />,
+  },
+  {
     link: "/about",
-    title: "About Us",
-    logo: <Spa color="inherit" />,
+    title: "A propos",
+    logo: <PersonPin color="inherit" />,
   },
   {
     link: "contact",
