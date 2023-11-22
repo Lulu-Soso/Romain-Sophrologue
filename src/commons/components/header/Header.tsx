@@ -14,6 +14,7 @@ import { Spa } from "@mui/icons-material";
 import DrawerComp from "./DrawerComp";
 import { Link } from "react-router-dom";
 import { PAGES } from "../../constants/pages";
+import Logo from "../../../assets/img/Logo Horizon.svg"
 
 const Header = () => {
   const [value, setValue] = useState(0);
@@ -32,8 +33,10 @@ const Header = () => {
                 alignItems: "center",
               }}
             >
-              <Spa />
-              <Typography sx={{ ml: 1 }}>Horizon</Typography>
+              {/* <Spa /> */}
+              <Typography sx={{ ml: 1 }}>
+                <img src={Logo} alt="Logo Lotus" style={{ width: "200px"}}/>
+              </Typography>
             </Stack>
           </Link>
 
