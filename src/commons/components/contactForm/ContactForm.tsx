@@ -50,17 +50,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <Container
-      maxWidth="lg"
-      sx={{
-        background: "#f4f4f4",
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "2rem",
-      }}
-    >
+    <>
       <Grid container>
         <Grid item xs={12} md={6}>
           <Paper elevation={3} sx={{ padding: "2rem" }}>
@@ -212,7 +202,8 @@ const ContactForm: React.FC = () => {
           Votre message a été envoyé avec succès!
         </MuiAlert>
       </Snackbar>
-    </Container>
+      </>
+
   );
 };
 
