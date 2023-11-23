@@ -15,7 +15,7 @@ const Map: React.FC = () => {
   // Markers
   const markers: MarkerData[] = [
     {
-      geocode: [45.5030003, 4.5522612],
+      geocode: [45.483168, 4.532536],
       popUp: "Hello, I am pop up 1",
     },
   ];
@@ -36,7 +36,7 @@ const Map: React.FC = () => {
   return (
     <Box sx={{ width: "100%", height: "60vh", overflow: "hidden" }}>
       <MapContainer
-        center={[45.5030003, 4.5522612]}
+        center={[45.483168, 4.532536]}
         zoom={13}
         style={{ height: "100%", width: "100%" }}
       >
