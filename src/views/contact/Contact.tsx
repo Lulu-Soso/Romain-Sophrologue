@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
-import Map from "./components/Map";
-import ContactForm from "./components/ContactForm";
+import Map from "./components/map/Map";
+import ContactForm from "./components/contactForm/ContactForm";
 
 const Contact = () => {
   return (

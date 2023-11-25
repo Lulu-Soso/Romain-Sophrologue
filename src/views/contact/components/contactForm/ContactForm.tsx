@@ -10,7 +10,7 @@ import {
   Snackbar
 } from "@mui/material";
 import MuiAlert from "@mui/material/Alert";
-import handIMG from "../../../assets/img/hand.jpg";
+import handIMG from "../../../../assets/img/hand.jpg";
 
 const YOUR_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 

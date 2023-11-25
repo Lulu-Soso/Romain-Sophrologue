@@ -21,7 +21,7 @@ const Map: React.FC = () => {
   ];
 
   const customIcon = new Icon({
-    iconUrl: require("../../../assets/icons/marker-icon.png"),
+    iconUrl: require("../../../../assets/icons/marker-icon.png"),
     iconSize: [38, 38],
   });
 
