@@ -10,7 +10,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import { Menu, Spa } from "@mui/icons-material";
+import { Menu, TripOrigin } from "@mui/icons-material";
 import { PAGES } from "../../constants/pages";
 import { Link } from "react-router-dom";
 
@@ -37,9 +37,9 @@ const DrawerComp = () => {
               alignItems: "center",
             }}
           >
-            <Spa color="inherit" fontSize="large" />
+            <TripOrigin color="inherit" fontSize="large" />
 
-            <Typography variant="h4">Horizon</Typography>
+            <Typography variant="h4">oriZon</Typography>
           </Box>
 
           {PAGES.map((page, index) => (

@@ -10,7 +10,7 @@ import {
   useTheme,
   Container,
 } from "@mui/material";
-import { Spa } from "@mui/icons-material";
+import { TripOrigin } from "@mui/icons-material";
 import DrawerComp from "./DrawerComp";
 import { Link } from "react-router-dom";
 import { PAGES } from "../../constants/pages";
@@ -32,10 +32,8 @@ const Header = () => {
                 alignItems: "center",
               }}
             >
-              <Spa />
-              <Typography sx={{ ml: 1 }}>
-                Horizon
-              </Typography>
+              <TripOrigin />
+              <Typography sx={{ ml: 1 }}>oriZon</Typography>
             </Stack>
           </Link>
 

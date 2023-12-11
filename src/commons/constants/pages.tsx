@@ -3,6 +3,7 @@ import {
   Roofing,
   Handshake,
   PersonPin,
+  Spa,
 } from "@mui/icons-material";
 
 export const PAGES = [
@@ -14,12 +15,17 @@ export const PAGES = [
   {
     link: "/services",
     title: "Prestations",
-    logo: <Handshake color="inherit" />,
+    logo: <Spa color="inherit" />,
   },
   {
     link: "/about",
     title: "A propos",
     logo: <PersonPin color="inherit" />,
+  },
+  {
+    link: "/prices",
+    title: "Tarifs",
+    logo: <Handshake color="inherit" />,
   },
   {
     link: "contact",

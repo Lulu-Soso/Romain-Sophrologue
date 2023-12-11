@@ -7,6 +7,7 @@ import AboutUs from "./views/about/AboutUs";
 import Contact from "./views/contact/Contact";
 import { Box } from "@mui/material";
 import Services from "./views/service/Services";
+import Prices from "./views/price/Prices";
 
 function App() {
   const [appBarHeight, setAppBarHeight] = useState(0);
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/prices" element={<Prices />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
