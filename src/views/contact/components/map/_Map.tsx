@@ -3,7 +3,7 @@ import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import L, { Icon, point } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import "leaflet/dist/leaflet.css";
-import { Box, Paper } from "@mui/material";
+import { Box } from "@mui/material";
 
 // Définition du type pour les marqueurs
 type MarkerData = {
@@ -34,10 +34,7 @@ const Map: React.FC = () => {
   };
 
   return (
-    <Paper
-      elevation={3}
-      sx={{ width: "100%", height: "250px", overflow: "hidden", mt: 2 }}
-    >
+    <Box sx={{ width: "100%", height: "60vh", overflow: "hidden" }}>
       <MapContainer
         center={[45.483168, 4.532536]}
         zoom={13}
@@ -59,7 +56,7 @@ const Map: React.FC = () => {
           ))}
         </MarkerClusterGroup>
       </MapContainer>
-    </Paper>
+    </Box>
   );
 };
 

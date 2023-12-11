@@ -117,53 +117,6 @@ const CarouselContainer = () => {
           ))}
         </Stack>
       </Box>
-
-      {/* <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-        }}
-      >
-        <IconButton
-          onClick={() => updateIndex(activeIndex - 1)}
-          size="large"
-          sx={{ backgroundColor: "white" }}
-        >
-          <ArrowBackIosNew />
-        </IconButton>
-        <Stack
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-            alignItems: "center",
-          }}
-        >
-          {items.map((_, index) => (
-            <IconButton
-              key={index}
-              size="small"
-              sx={{ backgroundColor: "white" }}
-              onClick={() => updateIndex(index)}
-            >
-              {index === activeIndex ? (
-                <RadioButtonChecked fontSize="small" />
-              ) : (
-                <RadioButtonUnchecked fontSize="small" />
-              )}
-            </IconButton>
-          ))}
-        </Stack>
-        <IconButton
-          size="large"
-          sx={{ backgroundColor: "white" }}
-          onClick={() => updateIndex(activeIndex + 1)}
-        >
-          <ArrowForwardIos />
-        </IconButton>
-      </Box> */}
     </Box>
   );
 };
