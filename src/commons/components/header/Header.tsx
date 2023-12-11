@@ -33,7 +33,9 @@ const Header = () => {
               }}
             >
               <Spa />
-              <Typography sx={{ ml: 1 }}>Horizon</Typography>
+              <Typography sx={{ ml: 1 }}>
+                Horizon
+              </Typography>
             </Stack>
           </Link>
 
