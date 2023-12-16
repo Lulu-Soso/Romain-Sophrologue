@@ -1,16 +1,8 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-import {
-  TextField,
-  Button,
-  Typography,
-  Paper,
-  Grid,
-  Snackbar,
-} from "@mui/material";
+import { TextField, Button, Typography, Paper, Snackbar } from "@mui/material";
 import MuiAlert from "@mui/material/Alert";
-import handIMG from "../../../../assets/img/hand.jpg";
 
 const YOUR_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 

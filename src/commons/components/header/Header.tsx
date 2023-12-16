@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Toolbar,
   Typography,
@@ -12,13 +12,24 @@ import {
 } from "@mui/material";
 import { TripOrigin } from "@mui/icons-material";
 import DrawerComp from "./DrawerComp";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { PAGES } from "../../constants/pages";
 
 const Header = () => {
   const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const path = PAGES.map((elt) => elt.link.split("/")[1]);
+
+    if (pathname) {
+      const index = path.findIndex((elt) => elt === pathname.split("/")[1]);
+      setValue(index);
+    }
+  }, [pathname]);
 
   return (
     <AppBar>

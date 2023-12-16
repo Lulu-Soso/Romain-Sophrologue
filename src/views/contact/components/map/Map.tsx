@@ -3,7 +3,7 @@ import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import L, { Icon, point } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import "leaflet/dist/leaflet.css";
-import { Box, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 
 // Définition du type pour les marqueurs
 type MarkerData = {

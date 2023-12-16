@@ -28,7 +28,7 @@ export const PAGES = [
     logo: <Handshake color="inherit" />,
   },
   {
-    link: "contact",
+    link: "/contact",
     title: "Contact",
     logo: <RecentActors color="inherit" />,
   },
