@@ -19,7 +19,6 @@ const Footer = () => {
         width: "100%",
         padding: 4,
         bgcolor: "background.paper",
-        mt: 8,
         backgroundColor: "#9BA698",
       }}
     >
