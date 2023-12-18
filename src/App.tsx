@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./commons/components/header/Header";
+import Footer from "./commons/components/footer/Footer";
 import { Routes, Route } from "react-router-dom";
 import Home from "./views/home/Home";
 import AboutUs from "./views/about/AboutUs";
@@ -34,6 +35,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Box>
+
+      <Footer />
     </div>
   );
 }
