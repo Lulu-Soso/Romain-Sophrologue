@@ -50,9 +50,7 @@ const Contact = () => {
               height: "100%",
               backgroundImage: `url(${handIMG})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
-              // backgroundAttachment: "fixed",
-              // backgroundAttachment: "scroll",
+              backgroundPosition: "center"
             }}
           ></Box>
         </Grid>
