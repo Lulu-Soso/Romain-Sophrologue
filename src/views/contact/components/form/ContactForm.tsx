@@ -6,11 +6,14 @@ import {
   Button,
   Typography,
   Paper,
-  Grid,
   Snackbar,
+  MenuItem,
+  Select,
+  InputLabel,
+  FormControl,
+  Box,
 } from "@mui/material";
 import MuiAlert from "@mui/material/Alert";
-import handIMG from "../../../../assets/img/hand.jpg";
 
 const YOUR_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
@@ -24,10 +27,11 @@ const ContactForm: React.FC = () => {
 
   const onSubmit = (data: any) => {
     const formData = {
-      name: data.name,
-      email: data.email,
-      phoneNumber: data.phoneNumber,
-      message: data.message,
+      _name: data.name,
+      _email: data.email,
+      _phoneNumber: data.phoneNumber,
+      _subject: data.subject,
+      _message: data.message,
     };
 
     // console.log('Données du formulaire :', formData);
@@ -54,9 +58,6 @@ const ContactForm: React.FC = () => {
         <Typography variant="h4" align="center" gutterBottom>
           Contactez-moi
         </Typography>
-        <Typography variant="body1" align="center">
-          Pour toute question ou message.
-        </Typography>
         <form onSubmit={handleSubmit(onSubmit)}>
           <TextField
             fullWidth
@@ -64,7 +65,8 @@ const ContactForm: React.FC = () => {
             variant="standard"
             InputProps={{
               sx: {
-                borderBottom: "1px solid #ccc",
+                // borderBottom: "1px solid #ccc",
+                marginBottom: "1rem",
               },
               ...register("name", {
                 required: true,
@@ -91,7 +93,8 @@ const ContactForm: React.FC = () => {
             variant="standard"
             InputProps={{
               sx: {
-                borderBottom: "1px solid #ccc",
+                // borderBottom: "1px solid #ccc",
+                marginBottom: "1rem",
               },
               ...register("email", {
                 required: true,
@@ -113,11 +116,12 @@ const ContactForm: React.FC = () => {
           )}
           <TextField
             fullWidth
-            label="Numéro de téléphone"
+            label="Téléphone"
             variant="standard"
             InputProps={{
               sx: {
-                borderBottom: "1px solid #ccc",
+                // borderBottom: "1px solid #ccc",
+                marginBottom: "1rem",
               },
               ...register("phoneNumber", {
                 pattern:
@@ -136,6 +140,37 @@ const ContactForm: React.FC = () => {
               Numéro de téléphone invalide
             </Typography>
           )}
+          <FormControl
+            fullWidth
+            variant="standard"
+            sx={{ marginBottom: "1rem" }}
+          >
+            <InputLabel id="subject-label">Objet de la demande *</InputLabel>
+            <Select
+              labelId="subject-label"
+              label="Sujet"
+              defaultValue=""
+              {...register("subject", { required: true })}
+            >
+              <MenuItem value="Devis">Devis</MenuItem>
+              <MenuItem value="Lorem ipsum dolor sit amet 2">
+                Lorem ipsum dolor sit amet 2
+              </MenuItem>
+              <MenuItem value="Autres">Autres</MenuItem>
+            </Select>
+            {errors.subject && (
+              <Typography
+                variant="body2"
+                sx={{
+                  color: "rgb(255, 71, 71)",
+                  fontSize: "10px",
+                  marginTop: "8px",
+                }}
+              >
+                Ce champ est obligatoire.
+              </Typography>
+            )}
+          </FormControl>
           <TextField
             fullWidth
             label="Message *"
@@ -144,7 +179,7 @@ const ContactForm: React.FC = () => {
             rows={4}
             InputProps={{
               sx: {
-                borderBottom: "1px solid #ccc",
+                // borderBottom: "1px solid #ccc",
               },
               ...register("message", {
                 required: true,
@@ -162,16 +197,24 @@ const ContactForm: React.FC = () => {
               Ce champ est obligatoire.
             </Typography>
           )}
-          <Button
-            fullWidth
-            variant="contained"
-            color="primary"
-            size="large"
-            onClick={handleSubmit(onSubmit)}
-            sx={{ marginTop: "1rem" }}
+          <Box
+            sx={{
+              textAlign: "right",
+              marginTop: "1rem",
+            }}
           >
-            Envoyer
-          </Button>
+            <Button
+              variant="contained"
+              size="medium"
+              onClick={handleSubmit(onSubmit)}
+              sx={{
+                maxWidth: "200px",
+                backgroundColor: "#486640",
+              }}
+            >
+              Envoyer
+            </Button>
+          </Box>
         </form>
       </Paper>
 
