@@ -3,7 +3,7 @@ import React from "react";
 import slide1 from "../../../../assets/img/slide1.jpg";
 import CustomGridItem from "./CustomGridItem";
 import { headerItems } from "../../../../commons/constants/headerItems";
-import { TripOrigin } from "@mui/icons-material";
+import Logo from "../../../../assets/img/logoOrizon.png";
 
 const Header = () => {
   return (
@@ -28,7 +28,11 @@ const Header = () => {
           <Stack
             sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}
           >
-            <TripOrigin sx={{ fontSize: "150px", mr: 3 }} />
+            <img
+              src={Logo}
+              alt="Orizon Logo"
+              style={{ width: "200px", marginRight: "20px" }}
+            />
 
             <Box>
               <Typography variant="h5">Bienvenue sur</Typography>

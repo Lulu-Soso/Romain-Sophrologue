@@ -10,9 +10,10 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import { Menu, TripOrigin } from "@mui/icons-material";
+import { Menu } from "@mui/icons-material";
 import { PAGES } from "../../constants/pages";
 import { Link } from "react-router-dom";
+import Logo from "../../../assets/img/logoOrizon.png";
 
 const DrawerComp = () => {
   const [open, setOpen] = useState(false);
@@ -37,7 +38,7 @@ const DrawerComp = () => {
               alignItems: "center",
             }}
           >
-            <TripOrigin color="inherit" fontSize="large" />
+            <img src={Logo} alt="Orizon Logo" style={{ width: "100px" }} />
 
             <Typography variant="h4">oriZon</Typography>
           </Box>

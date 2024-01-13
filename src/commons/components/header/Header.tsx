@@ -10,7 +10,7 @@ import {
   useTheme,
   Container,
 } from "@mui/material";
-import { TripOrigin } from "@mui/icons-material";
+import Logo from "../../../assets/img/logoOrizon.png";
 import DrawerComp from "./DrawerComp";
 import { Link, useLocation } from "react-router-dom";
 import { PAGES } from "../../constants/pages";
@@ -27,7 +27,7 @@ const Header = () => {
 
     if (pathname) {
       const index = path.findIndex((elt) => elt === pathname.split("/")[1]);
-      setValue(index);
+      if (index >= 0) setValue(index);
     }
   }, [pathname]);
 
@@ -43,7 +43,7 @@ const Header = () => {
                 alignItems: "center",
               }}
             >
-              <TripOrigin />
+              <img src={Logo} alt="Orizon Logo" style={{ width: "30px" }} />
               <Typography sx={{ ml: 1 }}>oriZon</Typography>
             </Stack>
           </Link>
