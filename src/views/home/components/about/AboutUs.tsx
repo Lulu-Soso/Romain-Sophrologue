@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import Romain from "../../assets/img/Borey-circle.png";
-import diplome1 from "../../assets/img/diplome-1.jpg";
-import diplome2 from "../../assets/img/diplome-2.jpg";
+import Romain from "../../../../assets/img/Borey-circle.png";
+import diplome1 from "../../../../assets/img/diplome-1.jpg";
+import diplome2 from "../../../../assets/img/diplome-2.jpg";
 
 const AboutUs = () => {
   const imageStyle = {

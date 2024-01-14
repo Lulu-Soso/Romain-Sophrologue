@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./commons/components/header/Header";
+import Footer from "./commons/components/footer/Footer";
 import { Routes, Route } from "react-router-dom";
 import Home from "./views/home/Home";
-import AboutUs from "./views/about/AboutUs";
+import AboutUs from "./views/home/components/about/AboutUs";
 import Contact from "./views/contact/Contact";
 import { Box } from "@mui/material";
 import Services from "./views/service/Services";
@@ -35,6 +36,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Box>
+
+      <Footer />
     </div>
   );
 }

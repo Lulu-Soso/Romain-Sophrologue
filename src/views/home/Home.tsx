@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 import Header from "./components/header/Header";
+import AboutUs from "./components/about/AboutUs";
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <Header />
 
       <Container sx={{ pt: 2 }}>
-        <Typography>Accueil</Typography>
+        <AboutUs />
       </Container>
     </>
   );

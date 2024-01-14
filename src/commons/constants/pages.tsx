@@ -2,7 +2,7 @@ import {
   RecentActors,
   Roofing,
   Handshake,
-  PersonPin,
+  // PersonPin,
   Spa,
 } from "@mui/icons-material";
 
@@ -17,11 +17,11 @@ export const PAGES = [
     title: "Prestations",
     logo: <Spa color="inherit" />,
   },
-  {
-    link: "/about",
-    title: "A propos",
-    logo: <PersonPin color="inherit" />,
-  },
+  //{
+  //  link: "/about",
+  //  title: "A propos",
+  //  logo: <PersonPin color="inherit" />,
+  //},
   {
     link: "/prices",
     title: "Tarifs",
