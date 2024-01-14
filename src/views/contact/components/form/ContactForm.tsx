@@ -94,8 +94,14 @@ const ContactForm: React.FC = () => {
             onChange={handleTabChange}
             aria-label="simple tabs example"
           >
-            <Tab label="Par mail" />
-            <Tab label="Autres" />
+            <Tab
+              label="Par mail"
+              sx={{ fontFamily: "Baumans", letterSpacing: 2 }}
+            />
+            <Tab
+              label="Autres"
+              sx={{ fontFamily: "Baumans", letterSpacing: 2 }}
+            />
           </Tabs>
         </Box>
 
@@ -246,7 +252,7 @@ const ContactForm: React.FC = () => {
                 onClick={handleSubmit(onSubmit)}
                 sx={{
                   maxWidth: "200px",
-                  backgroundColor: "#486640",
+                  // backgroundColor: "#486640",
                 }}
               >
                 Envoyer

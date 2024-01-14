@@ -1,12 +1,12 @@
 import { Box, IconButton, Typography } from "@mui/material";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const ContactOthers = () => {
   return (
     <>
       <Box marginBottom={3}>
-        <Typography>OriZon</Typography>
+        <Typography variant="h6">ORIZON</Typography>
         <Typography>Centre XXX XXX XX</Typography>
         <Typography>00 rue XXXX XXX XXX</Typography>
         <Typography>00000 Ville</Typography>
@@ -25,7 +25,7 @@ const ContactOthers = () => {
           href="https://facebook.com"
           target="_blank"
           color="primary"
-          sx={{ fontSize: "2rem" }}
+          sx={{ fontSize: "3rem", p: 0 }}
         >
           <FacebookIcon sx={{ fontSize: "inherit" }} />
         </IconButton>
@@ -33,9 +33,9 @@ const ContactOthers = () => {
           href="https://linkedin.com"
           target="_blank"
           color="primary"
-          sx={{ fontSize: "2rem" }}
+          sx={{ fontSize: "3rem" }}
         >
-          <LinkedInIcon sx={{ fontSize: "inherit" }} />
+          <LinkedInIcon sx={{ fontSize: "inherit", p: 0 }} />
         </IconButton>
       </Box>
     </>

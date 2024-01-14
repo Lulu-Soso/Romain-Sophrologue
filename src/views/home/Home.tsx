@@ -1,17 +1,18 @@
 import React from "react";
-import CarouselContainer from "./components/carousel/CarouselContainer";
-import TestimonialContainer from "./components/testimonial/TestimonialContainer"
-import { Container, Typography } from "@mui/material";
+import Header from "./components/header/Header";
+import AboutUs from "./components/about/AboutUs";
+import TestimonialContainer from "./components/testimonial/TestimonialContainer";
+import Formations from "./components/formations/Formations";
+import Partners from "./components/partners/Partners";
 
 const Home = () => {
   return (
     <>
-      <CarouselContainer />
-
-      <Container sx={{ pt: 2 }}>
-        <Typography>Accueil</Typography>
-        <TestimonialContainer />
-      </Container>
+      <Header />
+      <AboutUs />
+      <Formations />
+      <TestimonialContainer />
+      <Partners />
     </>
   );
 };

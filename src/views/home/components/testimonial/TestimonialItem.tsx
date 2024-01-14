@@ -28,52 +28,50 @@ const TestimonialItem = ({ item, width }: TestimonialItemProps) => {
         alignItems: "center",
         justifyContent: "center",
         height: height,
-        // backgroundColor: "lightgrey",
-        // backgroundColor: "#A698A3",
-        margin: "3rem 0",
+        backgroundColor: "lightgrey",
       }}
     >
-      <Container
-        sx={{
-          zIndex: 100,
-        }}
-      >
-      <Box
-        sx={{
-          // width: "100%",
-          py: 2,
-          pb: 3,
-          px: 4,
-          color: "dark",
-          textAlign: "center",
-        }}
-        whiteSpace="normal"
-      >
-        {/* <img
+      <Container>
+        <Box
+          sx={{
+            width: "100%",
+            color: "dark",
+            position: "relative",
+          }}
+          whiteSpace="normal"
+        >
+          <img
             src={item.image}
             alt={item.title}
             style={{
-              width: "10%",
+              width: "100px",
+              position: "absolute",
+              top: "-25px",
+              opacity: 0.5,
             }}
-          /> */}
-        <Typography sx={{ my: 3, display: "flex", alignItems: "center" }}>
-          <img src={item.image} alt={item.title} style={{ width: "10%" }} />
-          {/* <span style={{ marginLeft: "10px", marginRight: "10px" }}>{item.description}</span> */}
-          <span>{item.description}</span>
-          <img src={item.image2} alt={item.title} style={{ width: "10%" }} />
-        </Typography>
-        <Typography
-        >
-          {item.author}
-        </Typography>
-        <Typography
-          sx={{
-            py: 1,
-          }}
-        >
-          {item.job}
-        </Typography>
-      </Box>
+          />
+          <Typography sx={{ width: "85%", mx: "auto" }}>
+            {item.description}
+          </Typography>
+          <img
+            src={item.image2}
+            alt={item.title}
+            style={{
+              width: "100px",
+              position: "absolute",
+              bottom: "-25px",
+              right: 0,
+              opacity: 0.5,
+            }}
+          />
+        </Box>
+
+        <Box sx={{ mt: 3 }}>
+          <Typography sx={{ width: "85%", mx: "auto" }}>
+            {item.author}
+          </Typography>
+          <Typography sx={{ width: "85%", mx: "auto" }}>{item.job}</Typography>
+        </Box>
       </Container>
     </Box>
   );
