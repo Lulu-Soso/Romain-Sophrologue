@@ -1,16 +1,18 @@
 import React from "react";
-import { Container } from "@mui/material";
 import Header from "./components/header/Header";
 import AboutUs from "./components/about/AboutUs";
+import TestimonialContainer from "./components/testimonial/TestimonialContainer";
+import Formations from "./components/formations/Formations";
+import Partners from "./components/partners/Partners";
 
 const Home = () => {
   return (
     <>
       <Header />
-
-      <Container sx={{ pt: 2 }}>
-        <AboutUs />
-      </Container>
+      <AboutUs />
+      <Formations />
+      <TestimonialContainer />
+      <Partners />
     </>
   );
 };

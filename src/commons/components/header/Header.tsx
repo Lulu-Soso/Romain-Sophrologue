@@ -44,7 +44,9 @@ const Header = () => {
               }}
             >
               <img src={Logo} alt="Orizon Logo" style={{ width: "30px" }} />
-              <Typography sx={{ ml: 1 }}>oriZon</Typography>
+              <Typography variant="h5" sx={{ ml: 1 }}>
+                ORIZON
+              </Typography>
             </Stack>
           </Link>
 
@@ -68,6 +70,7 @@ const Header = () => {
                   label={page.title}
                   component={Link}
                   to={page.link}
+                  sx={{ fontFamily: "Baumans", letterSpacing: 2 }}
                 />
               ))}
             </Tabs>

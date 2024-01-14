@@ -40,7 +40,7 @@ const DrawerComp = () => {
           >
             <img src={Logo} alt="Orizon Logo" style={{ width: "100px" }} />
 
-            <Typography variant="h4">oriZon</Typography>
+            <Typography variant="h4">ORIZON</Typography>
           </Box>
 
           {PAGES.map((page, index) => (
@@ -49,6 +49,7 @@ const DrawerComp = () => {
               onClick={() => setOpen(false)}
               component={Link}
               to={page.link}
+              sx={{ fontFamily: "Baumans", letterSpacing: 2 }}
             >
               <ListItemIcon
                 sx={{

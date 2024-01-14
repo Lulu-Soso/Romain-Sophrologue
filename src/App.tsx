@@ -6,9 +6,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./views/home/Home";
 import AboutUs from "./views/home/components/about/AboutUs";
 import Contact from "./views/contact/Contact";
-import { Box } from "@mui/material";
+import { Box, ThemeProvider } from "@mui/material";
 import Services from "./views/service/Services";
 import Prices from "./views/price/Prices";
+import theme from "./theme";
 
 function App() {
   const [appBarHeight, setAppBarHeight] = useState(0);
@@ -22,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Header />
 
       <Box sx={{ mt: `${appBarHeight}px ` }}>
@@ -38,7 +39,7 @@ function App() {
       </Box>
 
       <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

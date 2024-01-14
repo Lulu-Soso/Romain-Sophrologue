@@ -36,10 +36,8 @@ const Header = () => {
 
             <Box>
               <Typography variant="h5">Bienvenue sur</Typography>
-              <Typography variant="h1">Orizon Sophrologie</Typography>
-              <Typography variant="h2" sx={{ fontSize: "35px" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </Typography>
+              <Typography variant="h1">ORIZON</Typography>
+              <Typography variant="h2">L'avènement du bien-être</Typography>
             </Box>
           </Stack>
         </Container>
