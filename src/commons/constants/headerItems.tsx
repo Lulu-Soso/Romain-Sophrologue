@@ -1,29 +1,32 @@
-import { Spa } from "@mui/icons-material";
 import { Item } from "../../types/Item";
+import sophro from "../../assets/img/picto_sophro.png";
+import amma from "../../assets/img/picto_amma.png";
+import bol from "../../assets/img/picto_bol.png";
+import harmo from "../../assets/img/picto_harmo.png";
 
 export const headerItems: Array<Item> = [
   {
-    title: "Prestation 1",
-    icon: <Spa sx={{ fontSize: "50px" }} />,
-    description: "Lorem Ipsum no le sed de to nara.",
+    title: "Sophrologie",
+    icon: sophro,
+    description: "Relaxation basée sur la respiration",
     link: "",
   },
   {
-    title: "Prestation 2",
-    icon: <Spa sx={{ fontSize: "50px" }} />,
-    description: "Lorem Ipsum no le sed de to nara.",
+    title: "Massage Amma Assis",
+    icon: amma,
+    description: "Relaxation sur chaise ergonomique",
     link: "",
   },
   {
-    title: "Prestation 3",
-    icon: <Spa sx={{ fontSize: "50px" }} />,
-    description: "Lorem Ipsum no le sed de to nara.",
+    title: "Massage Sonore Vibratoire",
+    icon: bol,
+    description: "Relaxation par les bols tibétains",
     link: "",
   },
   {
-    title: "Prestation 4",
-    icon: <Spa sx={{ fontSize: "50px" }} />,
-    description: "Lorem Ipsum no le sed de to nara.",
+    title: "Massage Harmonisant",
+    icon: harmo,
+    description: "Relaxation corporelle à l'huile",
     link: "",
   },
 ];

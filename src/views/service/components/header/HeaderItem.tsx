@@ -33,7 +33,11 @@ const HeaderItem = ({ item, index, scrollTo }: HeaderItemProps) => {
           },
         }}
       >
-        {item.icon}
+        <img
+          src={item.icon}
+          alt={`${item.title} Orizon`}
+          style={{ width: "40px" }}
+        />
       </Button>
     </Tooltip>
   );
