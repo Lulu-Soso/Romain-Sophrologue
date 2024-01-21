@@ -9,7 +9,6 @@ interface CustomGridItemProps {
 }
 const CustomGridItem = ({ item, index }: CustomGridItemProps) => {
   const navigate = useNavigate();
-  console.log(item.icon);
   return (
     <Grid item xs={3}>
       <Button
