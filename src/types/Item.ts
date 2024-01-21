@@ -1,6 +1,6 @@
 export interface Item {
   title: string;
-  icon: JSX.Element;
+  icon: string;
   description: string;
   link: string;
 }
